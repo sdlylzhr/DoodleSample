@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ConsoleControlView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="279-Vu-2MS" customClass="DoodleView">
+                    <rect key="frame" x="8" y="164" width="584" height="428"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="1" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="lLL-aR-oTn">
+                    <rect key="frame" x="406" y="126" width="188" height="31"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="184" id="FdU-Cy-KYM"/>
+                    </constraints>
+                    <connections>
+                        <action selector="widthSliderAction:" destination="iN0-l3-epB" eventType="valueChanged" id="YdA-re-xGe"/>
+                    </connections>
+                </slider>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="width:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygc-BM-b1o">
+                    <rect key="frame" x="345" y="130" width="55" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="55" id="9Rr-uY-tda"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="fhO-Vr-qco">
+                    <rect key="frame" x="8" y="8" width="584" height="110"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JrT-U0-Acp">
+                            <rect key="frame" x="0.0" y="0.0" width="113" height="110"/>
+                            <animations/>
+                            <state key="normal" title="自由"/>
+                            <connections>
+                                <action selector="pickDrawType:" destination="iN0-l3-epB" eventType="touchUpInside" id="tRr-Rc-zDv"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yuj-K0-iVN">
+                            <rect key="frame" x="118" y="0.0" width="113" height="110"/>
+                            <animations/>
+                            <state key="normal" title="圆"/>
+                            <connections>
+                                <action selector="pickDrawType:" destination="iN0-l3-epB" eventType="touchUpInside" id="9iO-vH-kc4"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gzt-ay-shL">
+                            <rect key="frame" x="236" y="0.0" width="113" height="110"/>
+                            <animations/>
+                            <state key="normal" title="矩形"/>
+                            <connections>
+                                <action selector="pickDrawType:" destination="iN0-l3-epB" eventType="touchUpInside" id="G2J-4o-hm1"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TA9-js-sF7">
+                            <rect key="frame" x="354" y="0.0" width="113" height="110"/>
+                            <animations/>
+                            <state key="normal" title="圆角矩形"/>
+                            <connections>
+                                <action selector="pickDrawType:" destination="iN0-l3-epB" eventType="touchUpInside" id="hhs-CZ-qOP"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSJ-64-2At">
+                            <rect key="frame" x="471" y="0.0" width="113" height="110"/>
+                            <animations/>
+                            <state key="normal" title="线"/>
+                            <connections>
+                                <action selector="pickDrawType:" destination="iN0-l3-epB" eventType="touchUpInside" id="T69-zQ-awC"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <animations/>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxi-sm-7EK">
+                    <rect key="frame" x="8" y="126" width="329" height="30"/>
+                    <animations/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="选择颜色"/>
+                    <connections>
+                        <action selector="pickColor:" destination="iN0-l3-epB" eventType="touchUpInside" id="m69-gJ-EFm"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="ygc-BM-b1o" firstAttribute="baseline" secondItem="dxi-sm-7EK" secondAttribute="firstBaseline" id="1Wn-T4-ZC2"/>
+                <constraint firstItem="ygc-BM-b1o" firstAttribute="leading" secondItem="dxi-sm-7EK" secondAttribute="trailing" constant="8" symbolic="YES" id="3H5-km-vBf"/>
+                <constraint firstItem="279-Vu-2MS" firstAttribute="trailing" secondItem="lLL-aR-oTn" secondAttribute="trailing" id="5a6-j8-gDP"/>
+                <constraint firstItem="ygc-BM-b1o" firstAttribute="centerY" secondItem="lLL-aR-oTn" secondAttribute="centerY" id="90A-FK-SD6"/>
+                <constraint firstItem="fhO-Vr-qco" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="DdH-fk-PRM"/>
+                <constraint firstItem="lLL-aR-oTn" firstAttribute="leading" secondItem="ygc-BM-b1o" secondAttribute="trailing" constant="8" symbolic="YES" id="EC2-2Z-5vB"/>
+                <constraint firstItem="lLL-aR-oTn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="126" id="Fhk-16-QeU"/>
+                <constraint firstItem="dxi-sm-7EK" firstAttribute="top" secondItem="fhO-Vr-qco" secondAttribute="bottom" constant="8" id="H0a-Kh-u73"/>
+                <constraint firstItem="dxi-sm-7EK" firstAttribute="top" secondItem="lLL-aR-oTn" secondAttribute="top" id="Kf7-Fr-MHL"/>
+                <constraint firstItem="ygc-BM-b1o" firstAttribute="baseline" secondItem="dxi-sm-7EK" secondAttribute="baseline" id="L8k-ed-7cn"/>
+                <constraint firstItem="279-Vu-2MS" firstAttribute="top" secondItem="lLL-aR-oTn" secondAttribute="bottom" constant="8" symbolic="YES" id="Lpw-s0-l4b"/>
+                <constraint firstItem="dxi-sm-7EK" firstAttribute="leading" secondItem="fhO-Vr-qco" secondAttribute="leading" id="WcZ-sH-9ZZ"/>
+                <constraint firstAttribute="trailing" secondItem="fhO-Vr-qco" secondAttribute="trailing" constant="8" id="fM9-u0-Njg"/>
+                <constraint firstAttribute="trailing" secondItem="fhO-Vr-qco" secondAttribute="trailing" constant="8" id="gp7-k0-3ip"/>
+                <constraint firstItem="279-Vu-2MS" firstAttribute="leading" secondItem="dxi-sm-7EK" secondAttribute="leading" id="jQd-qk-Z8h"/>
+                <constraint firstItem="fhO-Vr-qco" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="jn9-rV-yhx"/>
+                <constraint firstItem="279-Vu-2MS" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottomMargin" id="qeM-PW-Ikl"/>
+                <constraint firstItem="lLL-aR-oTn" firstAttribute="trailing" secondItem="fhO-Vr-qco" secondAttribute="trailing" id="sml-Fp-9ho"/>
+                <constraint firstItem="fhO-Vr-qco" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" id="tcu-vW-gts"/>
+                <constraint firstItem="279-Vu-2MS" firstAttribute="top" secondItem="dxi-sm-7EK" secondAttribute="bottom" constant="8" symbolic="YES" id="td4-mG-Ql1"/>
+            </constraints>
+            <connections>
+                <outlet property="colorButton" destination="dxi-sm-7EK" id="Y2X-Ek-sGa"/>
+                <outlet property="drawView" destination="279-Vu-2MS" id="QW5-Uc-i79"/>
+            </connections>
+        </view>
+    </objects>
+</document>

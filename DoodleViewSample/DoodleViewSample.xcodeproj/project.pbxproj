@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D742A46C1BEC987F00879318 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D742A46B1BEC987F00879318 /* ViewController.xib */; };
+		D742A4891BEC9B7C00879318 /* checkerboard.png in Resources */ = {isa = PBXBuildFile; fileRef = D742A4711BEC9B7C00879318 /* checkerboard.png */; };
+		D742A48A1BEC9B7C00879318 /* checkerboard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D742A4721BEC9B7C00879318 /* checkerboard@2x.png */; };
+		D742A48B1BEC9B7C00879318 /* colorPickerKnob.png in Resources */ = {isa = PBXBuildFile; fileRef = D742A4731BEC9B7C00879318 /* colorPickerKnob.png */; };
+		D742A48C1BEC9B7C00879318 /* colorPickerKnob@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D742A4741BEC9B7C00879318 /* colorPickerKnob@2x.png */; };
+		D742A48D1BEC9B7C00879318 /* HSV.m in Sources */ = {isa = PBXBuildFile; fileRef = D742A4751BEC9B7C00879318 /* HSV.m */; };
+		D742A48E1BEC9B7C00879318 /* KZColorCompareView.m in Sources */ = {isa = PBXBuildFile; fileRef = D742A4781BEC9B7C00879318 /* KZColorCompareView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D742A48F1BEC9B7C00879318 /* KZColorPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D742A47A1BEC9B7C00879318 /* KZColorPicker.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D742A4901BEC9B7C00879318 /* KZColorPickerAlphaSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = D742A47C1BEC9B7C00879318 /* KZColorPickerAlphaSlider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D742A4911BEC9B7C00879318 /* KZColorPickerBrightnessSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = D742A47E1BEC9B7C00879318 /* KZColorPickerBrightnessSlider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D742A4921BEC9B7C00879318 /* KZColorPickerHSWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = D742A4801BEC9B7C00879318 /* KZColorPickerHSWheel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D742A4931BEC9B7C00879318 /* KZColorPickerSwatchView.m in Sources */ = {isa = PBXBuildFile; fileRef = D742A4821BEC9B7C00879318 /* KZColorPickerSwatchView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D742A4941BEC9B7C00879318 /* KZUnitSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = D742A4841BEC9B7C00879318 /* KZUnitSlider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D742A4951BEC9B7C00879318 /* pickerColorWheel.png in Resources */ = {isa = PBXBuildFile; fileRef = D742A4851BEC9B7C00879318 /* pickerColorWheel.png */; };
+		D742A4961BEC9B7C00879318 /* pickerColorWheel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D742A4861BEC9B7C00879318 /* pickerColorWheel@2x.png */; };
+		D742A4971BEC9B7C00879318 /* UIColor-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = D742A4881BEC9B7C00879318 /* UIColor-Expanded.m */; };
+		D742A49A1BEC9C4F00879318 /* KZDefaultColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D742A4991BEC9C4F00879318 /* KZDefaultColorViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D742A4A01BECB2B000879318 /* Freedom.png in Resources */ = {isa = PBXBuildFile; fileRef = D742A49C1BECB2B000879318 /* Freedom.png */; };
+		D742A4A11BECB2B000879318 /* Rect.png in Resources */ = {isa = PBXBuildFile; fileRef = D742A49D1BECB2B000879318 /* Rect.png */; };
+		D742A4A21BECB2B000879318 /* Round.png in Resources */ = {isa = PBXBuildFile; fileRef = D742A49E1BECB2B000879318 /* Round.png */; };
+		D742A4A31BECB2B000879318 /* RoundRect.png in Resources */ = {isa = PBXBuildFile; fileRef = D742A49F1BECB2B000879318 /* RoundRect.png */; };
+		D742A4AD1BECB9F700879318 /* ConsoleControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = D742A4A61BECB9F700879318 /* ConsoleControlView.m */; };
+		D742A4AE1BECB9F700879318 /* ConsoleControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D742A4A71BECB9F700879318 /* ConsoleControlView.xib */; };
+		D742A4AF1BECB9F700879318 /* DoodleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D742A4AA1BECB9F700879318 /* DoodleView.m */; };
+		D742A4B01BECB9F700879318 /* Shape.m in Sources */ = {isa = PBXBuildFile; fileRef = D742A4AC1BECB9F700879318 /* Shape.m */; };
+		D774F0051BEB44FC00297284 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D774F0041BEB44FC00297284 /* main.m */; };
+		D774F0081BEB44FC00297284 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D774F0071BEB44FC00297284 /* AppDelegate.m */; };
+		D774F00B1BEB44FC00297284 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D774F00A1BEB44FC00297284 /* ViewController.m */; };
+		D774F00E1BEB44FC00297284 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D774F00C1BEB44FC00297284 /* Main.storyboard */; };
+		D774F0101BEB44FC00297284 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D774F00F1BEB44FC00297284 /* Assets.xcassets */; };
+		D774F0131BEB44FC00297284 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D774F0111BEB44FC00297284 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D742A46B1BEC987F00879318 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		D742A4711BEC9B7C00879318 /* checkerboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkerboard.png; sourceTree = "<group>"; };
+		D742A4721BEC9B7C00879318 /* checkerboard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkerboard@2x.png"; sourceTree = "<group>"; };
+		D742A4731BEC9B7C00879318 /* colorPickerKnob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorPickerKnob.png; sourceTree = "<group>"; };
+		D742A4741BEC9B7C00879318 /* colorPickerKnob@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "colorPickerKnob@2x.png"; sourceTree = "<group>"; };
+		D742A4751BEC9B7C00879318 /* HSV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSV.m; sourceTree = "<group>"; };
+		D742A4761BEC9B7C00879318 /* HSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSV.h; sourceTree = "<group>"; };
+		D742A4771BEC9B7C00879318 /* KZColorCompareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZColorCompareView.h; sourceTree = "<group>"; };
+		D742A4781BEC9B7C00879318 /* KZColorCompareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZColorCompareView.m; sourceTree = "<group>"; };
+		D742A4791BEC9B7C00879318 /* KZColorPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZColorPicker.h; sourceTree = "<group>"; };
+		D742A47A1BEC9B7C00879318 /* KZColorPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZColorPicker.m; sourceTree = "<group>"; };
+		D742A47B1BEC9B7C00879318 /* KZColorPickerAlphaSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZColorPickerAlphaSlider.h; sourceTree = "<group>"; };
+		D742A47C1BEC9B7C00879318 /* KZColorPickerAlphaSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZColorPickerAlphaSlider.m; sourceTree = "<group>"; };
+		D742A47D1BEC9B7C00879318 /* KZColorPickerBrightnessSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZColorPickerBrightnessSlider.h; sourceTree = "<group>"; };
+		D742A47E1BEC9B7C00879318 /* KZColorPickerBrightnessSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZColorPickerBrightnessSlider.m; sourceTree = "<group>"; };
+		D742A47F1BEC9B7C00879318 /* KZColorPickerHSWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZColorPickerHSWheel.h; sourceTree = "<group>"; };
+		D742A4801BEC9B7C00879318 /* KZColorPickerHSWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZColorPickerHSWheel.m; sourceTree = "<group>"; };
+		D742A4811BEC9B7C00879318 /* KZColorPickerSwatchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZColorPickerSwatchView.h; sourceTree = "<group>"; };
+		D742A4821BEC9B7C00879318 /* KZColorPickerSwatchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZColorPickerSwatchView.m; sourceTree = "<group>"; };
+		D742A4831BEC9B7C00879318 /* KZUnitSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZUnitSlider.h; sourceTree = "<group>"; };
+		D742A4841BEC9B7C00879318 /* KZUnitSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZUnitSlider.m; sourceTree = "<group>"; };
+		D742A4851BEC9B7C00879318 /* pickerColorWheel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pickerColorWheel.png; sourceTree = "<group>"; };
+		D742A4861BEC9B7C00879318 /* pickerColorWheel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pickerColorWheel@2x.png"; sourceTree = "<group>"; };
+		D742A4871BEC9B7C00879318 /* UIColor-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor-Expanded.h"; sourceTree = "<group>"; };
+		D742A4881BEC9B7C00879318 /* UIColor-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor-Expanded.m"; sourceTree = "<group>"; };
+		D742A4981BEC9C4F00879318 /* KZDefaultColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZDefaultColorViewController.h; sourceTree = "<group>"; };
+		D742A4991BEC9C4F00879318 /* KZDefaultColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZDefaultColorViewController.m; sourceTree = "<group>"; };
+		D742A49C1BECB2B000879318 /* Freedom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Freedom.png; sourceTree = "<group>"; };
+		D742A49D1BECB2B000879318 /* Rect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rect.png; sourceTree = "<group>"; };
+		D742A49E1BECB2B000879318 /* Round.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Round.png; sourceTree = "<group>"; };
+		D742A49F1BECB2B000879318 /* RoundRect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RoundRect.png; sourceTree = "<group>"; };
+		D742A4A51BECB9F700879318 /* ConsoleControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsoleControlView.h; sourceTree = "<group>"; };
+		D742A4A61BECB9F700879318 /* ConsoleControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsoleControlView.m; sourceTree = "<group>"; };
+		D742A4A71BECB9F700879318 /* ConsoleControlView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConsoleControlView.xib; sourceTree = "<group>"; };
+		D742A4A91BECB9F700879318 /* DoodleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoodleView.h; sourceTree = "<group>"; };
+		D742A4AA1BECB9F700879318 /* DoodleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoodleView.m; sourceTree = "<group>"; };
+		D742A4AB1BECB9F700879318 /* Shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shape.h; sourceTree = "<group>"; };
+		D742A4AC1BECB9F700879318 /* Shape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shape.m; sourceTree = "<group>"; };
+		D742A4B11BECBA1800879318 /* Doodle-pre.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Doodle-pre.pch"; sourceTree = "<group>"; };
+		D774F0001BEB44FC00297284 /* DoodleViewSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoodleViewSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D774F0041BEB44FC00297284 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D774F0061BEB44FC00297284 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D774F0071BEB44FC00297284 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D774F0091BEB44FC00297284 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D774F00A1BEB44FC00297284 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D774F00D1BEB44FC00297284 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D774F00F1BEB44FC00297284 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D774F0121BEB44FC00297284 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D774F0141BEB44FC00297284 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D774EFFD1BEB44FC00297284 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D742A4701BEC9B7C00879318 /* ColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				D742A4981BEC9C4F00879318 /* KZDefaultColorViewController.h */,
+				D742A4991BEC9C4F00879318 /* KZDefaultColorViewController.m */,
+				D742A4711BEC9B7C00879318 /* checkerboard.png */,
+				D742A4721BEC9B7C00879318 /* checkerboard@2x.png */,
+				D742A4731BEC9B7C00879318 /* colorPickerKnob.png */,
+				D742A4741BEC9B7C00879318 /* colorPickerKnob@2x.png */,
+				D742A4751BEC9B7C00879318 /* HSV.m */,
+				D742A4761BEC9B7C00879318 /* HSV.h */,
+				D742A4771BEC9B7C00879318 /* KZColorCompareView.h */,
+				D742A4781BEC9B7C00879318 /* KZColorCompareView.m */,
+				D742A4791BEC9B7C00879318 /* KZColorPicker.h */,
+				D742A47A1BEC9B7C00879318 /* KZColorPicker.m */,
+				D742A47B1BEC9B7C00879318 /* KZColorPickerAlphaSlider.h */,
+				D742A47C1BEC9B7C00879318 /* KZColorPickerAlphaSlider.m */,
+				D742A47D1BEC9B7C00879318 /* KZColorPickerBrightnessSlider.h */,
+				D742A47E1BEC9B7C00879318 /* KZColorPickerBrightnessSlider.m */,
+				D742A47F1BEC9B7C00879318 /* KZColorPickerHSWheel.h */,
+				D742A4801BEC9B7C00879318 /* KZColorPickerHSWheel.m */,
+				D742A4811BEC9B7C00879318 /* KZColorPickerSwatchView.h */,
+				D742A4821BEC9B7C00879318 /* KZColorPickerSwatchView.m */,
+				D742A4831BEC9B7C00879318 /* KZUnitSlider.h */,
+				D742A4841BEC9B7C00879318 /* KZUnitSlider.m */,
+				D742A4851BEC9B7C00879318 /* pickerColorWheel.png */,
+				D742A4861BEC9B7C00879318 /* pickerColorWheel@2x.png */,
+				D742A4871BEC9B7C00879318 /* UIColor-Expanded.h */,
+				D742A4881BEC9B7C00879318 /* UIColor-Expanded.m */,
+			);
+			path = ColorPicker;
+			sourceTree = "<group>";
+		};
+		D742A49B1BECB2B000879318 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				D742A49C1BECB2B000879318 /* Freedom.png */,
+				D742A49D1BECB2B000879318 /* Rect.png */,
+				D742A49E1BECB2B000879318 /* Round.png */,
+				D742A49F1BECB2B000879318 /* RoundRect.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		D742A4A41BECB9F700879318 /* DrawControl */ = {
+			isa = PBXGroup;
+			children = (
+				D742A4A51BECB9F700879318 /* ConsoleControlView.h */,
+				D742A4A61BECB9F700879318 /* ConsoleControlView.m */,
+				D742A4A71BECB9F700879318 /* ConsoleControlView.xib */,
+				D742A4A91BECB9F700879318 /* DoodleView.h */,
+				D742A4AA1BECB9F700879318 /* DoodleView.m */,
+				D742A4AB1BECB9F700879318 /* Shape.h */,
+				D742A4AC1BECB9F700879318 /* Shape.m */,
+			);
+			path = DrawControl;
+			sourceTree = "<group>";
+		};
+		D774EFF71BEB44FC00297284 = {
+			isa = PBXGroup;
+			children = (
+				D774F0021BEB44FC00297284 /* DoodleViewSample */,
+				D774F0011BEB44FC00297284 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D774F0011BEB44FC00297284 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D774F0001BEB44FC00297284 /* DoodleViewSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D774F0021BEB44FC00297284 /* DoodleViewSample */ = {
+			isa = PBXGroup;
+			children = (
+				D774F0061BEB44FC00297284 /* AppDelegate.h */,
+				D774F0071BEB44FC00297284 /* AppDelegate.m */,
+				D774F0091BEB44FC00297284 /* ViewController.h */,
+				D774F00A1BEB44FC00297284 /* ViewController.m */,
+				D742A46B1BEC987F00879318 /* ViewController.xib */,
+				D742A4A41BECB9F700879318 /* DrawControl */,
+				D742A49B1BECB2B000879318 /* Image */,
+				D742A4701BEC9B7C00879318 /* ColorPicker */,
+				D774F00C1BEB44FC00297284 /* Main.storyboard */,
+				D742A4B11BECBA1800879318 /* Doodle-pre.pch */,
+				D774F00F1BEB44FC00297284 /* Assets.xcassets */,
+				D774F0111BEB44FC00297284 /* LaunchScreen.storyboard */,
+				D774F0141BEB44FC00297284 /* Info.plist */,
+				D774F0031BEB44FC00297284 /* Supporting Files */,
+			);
+			path = DoodleViewSample;
+			sourceTree = "<group>";
+		};
+		D774F0031BEB44FC00297284 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D774F0041BEB44FC00297284 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D774EFFF1BEB44FC00297284 /* DoodleViewSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D774F0171BEB44FC00297284 /* Build configuration list for PBXNativeTarget "DoodleViewSample" */;
+			buildPhases = (
+				D774EFFC1BEB44FC00297284 /* Sources */,
+				D774EFFD1BEB44FC00297284 /* Frameworks */,
+				D774EFFE1BEB44FC00297284 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DoodleViewSample;
+			productName = DoodleViewSample;
+			productReference = D774F0001BEB44FC00297284 /* DoodleViewSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D774EFF81BEB44FC00297284 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = lizhongren;
+				TargetAttributes = {
+					D774EFFF1BEB44FC00297284 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = D774EFFB1BEB44FC00297284 /* Build configuration list for PBXProject "DoodleViewSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D774EFF71BEB44FC00297284;
+			productRefGroup = D774F0011BEB44FC00297284 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D774EFFF1BEB44FC00297284 /* DoodleViewSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D774EFFE1BEB44FC00297284 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D742A48C1BEC9B7C00879318 /* colorPickerKnob@2x.png in Resources */,
+				D774F0131BEB44FC00297284 /* LaunchScreen.storyboard in Resources */,
+				D742A4A11BECB2B000879318 /* Rect.png in Resources */,
+				D774F0101BEB44FC00297284 /* Assets.xcassets in Resources */,
+				D774F00E1BEB44FC00297284 /* Main.storyboard in Resources */,
+				D742A4961BEC9B7C00879318 /* pickerColorWheel@2x.png in Resources */,
+				D742A48A1BEC9B7C00879318 /* checkerboard@2x.png in Resources */,
+				D742A4A31BECB2B000879318 /* RoundRect.png in Resources */,
+				D742A4891BEC9B7C00879318 /* checkerboard.png in Resources */,
+				D742A4A01BECB2B000879318 /* Freedom.png in Resources */,
+				D742A4A21BECB2B000879318 /* Round.png in Resources */,
+				D742A46C1BEC987F00879318 /* ViewController.xib in Resources */,
+				D742A4951BEC9B7C00879318 /* pickerColorWheel.png in Resources */,
+				D742A4AE1BECB9F700879318 /* ConsoleControlView.xib in Resources */,
+				D742A48B1BEC9B7C00879318 /* colorPickerKnob.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D774EFFC1BEB44FC00297284 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D742A4901BEC9B7C00879318 /* KZColorPickerAlphaSlider.m in Sources */,
+				D742A49A1BEC9C4F00879318 /* KZDefaultColorViewController.m in Sources */,
+				D774F00B1BEB44FC00297284 /* ViewController.m in Sources */,
+				D742A4B01BECB9F700879318 /* Shape.m in Sources */,
+				D742A4AF1BECB9F700879318 /* DoodleView.m in Sources */,
+				D742A4941BEC9B7C00879318 /* KZUnitSlider.m in Sources */,
+				D774F0081BEB44FC00297284 /* AppDelegate.m in Sources */,
+				D742A48D1BEC9B7C00879318 /* HSV.m in Sources */,
+				D742A4911BEC9B7C00879318 /* KZColorPickerBrightnessSlider.m in Sources */,
+				D742A48E1BEC9B7C00879318 /* KZColorCompareView.m in Sources */,
+				D742A48F1BEC9B7C00879318 /* KZColorPicker.m in Sources */,
+				D742A4931BEC9B7C00879318 /* KZColorPickerSwatchView.m in Sources */,
+				D742A4971BEC9B7C00879318 /* UIColor-Expanded.m in Sources */,
+				D774F0051BEB44FC00297284 /* main.m in Sources */,
+				D742A4AD1BECB9F700879318 /* ConsoleControlView.m in Sources */,
+				D742A4921BEC9B7C00879318 /* KZColorPickerHSWheel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D774F00C1BEB44FC00297284 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D774F00D1BEB44FC00297284 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D774F0111BEB44FC00297284 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D774F0121BEB44FC00297284 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D774F0151BEB44FC00297284 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D774F0161BEB44FC00297284 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D774F0181BEB44FC00297284 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DoodleViewSample/Doodle-pre.pch";
+				INFOPLIST_FILE = DoodleViewSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lzhr.DoodleViewSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D774F0191BEB44FC00297284 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DoodleViewSample/Doodle-pre.pch";
+				INFOPLIST_FILE = DoodleViewSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lzhr.DoodleViewSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D774EFFB1BEB44FC00297284 /* Build configuration list for PBXProject "DoodleViewSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D774F0151BEB44FC00297284 /* Debug */,
+				D774F0161BEB44FC00297284 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D774F0171BEB44FC00297284 /* Build configuration list for PBXNativeTarget "DoodleViewSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D774F0181BEB44FC00297284 /* Debug */,
+				D774F0191BEB44FC00297284 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D774EFF81BEB44FC00297284 /* Project object */;
+}

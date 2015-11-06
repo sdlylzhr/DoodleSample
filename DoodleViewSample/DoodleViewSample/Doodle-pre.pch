@@ -1,0 +1,19 @@
+//
+//  Doodle-pre.pch
+//  DoodleViewSample
+//
+//  Created by lizhongren on 15/11/6.
+//  Copyright © 2015年 lizhongren. All rights reserved.
+//
+
+#ifndef Doodle_pre_pch
+#define Doodle_pre_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* Doodle_pre_pch */
+
+#import <CoreGraphics/CoreGraphics.h>
+#import <UIKit/UIKit.h>
+
