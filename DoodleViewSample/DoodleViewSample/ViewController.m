@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "DoodleView.h"
 #import "ConsoleControlView.h"
+#import "UIView+fulu.h"
 
 @interface ViewController () <UICollectionViewDelegate>
 
