@@ -25,6 +25,7 @@
     doodleView.frame = self.view.bounds;
     [self.view addSubview:doodleView];
     
+    
 }
 
 - (void)didReceiveMemoryWarning {
