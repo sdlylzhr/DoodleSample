@@ -32,7 +32,6 @@
 		D742A4AE1BECB9F700879318 /* ConsoleControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D742A4A71BECB9F700879318 /* ConsoleControlView.xib */; };
 		D742A4AF1BECB9F700879318 /* DoodleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D742A4AA1BECB9F700879318 /* DoodleView.m */; };
 		D742A4B01BECB9F700879318 /* Shape.m in Sources */ = {isa = PBXBuildFile; fileRef = D742A4AC1BECB9F700879318 /* Shape.m */; };
-		D750020A1BECE61700DAFE4D /* UIView+fulu.m in Sources */ = {isa = PBXBuildFile; fileRef = D75002091BECE61700DAFE4D /* UIView+fulu.m */; };
 		D774F0051BEB44FC00297284 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D774F0041BEB44FC00297284 /* main.m */; };
 		D774F0081BEB44FC00297284 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D774F0071BEB44FC00297284 /* AppDelegate.m */; };
 		D774F00B1BEB44FC00297284 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D774F00A1BEB44FC00297284 /* ViewController.m */; };
@@ -81,8 +80,6 @@
 		D742A4AB1BECB9F700879318 /* Shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shape.h; sourceTree = "<group>"; };
 		D742A4AC1BECB9F700879318 /* Shape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shape.m; sourceTree = "<group>"; };
 		D742A4B11BECBA1800879318 /* Doodle-pre.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Doodle-pre.pch"; sourceTree = "<group>"; };
-		D75002081BECE61700DAFE4D /* UIView+fulu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+fulu.h"; sourceTree = "<group>"; };
-		D75002091BECE61700DAFE4D /* UIView+fulu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+fulu.m"; sourceTree = "<group>"; };
 		D774F0001BEB44FC00297284 /* DoodleViewSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoodleViewSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D774F0041BEB44FC00297284 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D774F0061BEB44FC00297284 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -158,8 +155,6 @@
 				D742A4A71BECB9F700879318 /* ConsoleControlView.xib */,
 				D742A4A91BECB9F700879318 /* DoodleView.h */,
 				D742A4AA1BECB9F700879318 /* DoodleView.m */,
-				D75002081BECE61700DAFE4D /* UIView+fulu.h */,
-				D75002091BECE61700DAFE4D /* UIView+fulu.m */,
 				D742A4AB1BECB9F700879318 /* Shape.h */,
 				D742A4AC1BECB9F700879318 /* Shape.m */,
 			);
@@ -296,7 +291,6 @@
 				D742A4901BEC9B7C00879318 /* KZColorPickerAlphaSlider.m in Sources */,
 				D742A49A1BEC9C4F00879318 /* KZDefaultColorViewController.m in Sources */,
 				D774F00B1BEB44FC00297284 /* ViewController.m in Sources */,
-				D750020A1BECE61700DAFE4D /* UIView+fulu.m in Sources */,
 				D742A4B01BECB9F700879318 /* Shape.m in Sources */,
 				D742A4AF1BECB9F700879318 /* DoodleView.m in Sources */,
 				D742A4941BEC9B7C00879318 /* KZUnitSlider.m in Sources */,
