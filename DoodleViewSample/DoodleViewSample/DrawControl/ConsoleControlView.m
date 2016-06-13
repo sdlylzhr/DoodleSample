@@ -93,9 +93,10 @@
     [self.containerView addSubview:picker];
     
     
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     [btn setTitle:@"确定" forState:UIControlStateNormal];
-    btn.backgroundColor = [UIColor redColor];
+    [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+//    btn.backgroundColor = [UIColor redColor];
     btn.frame = CGRectMake(275, 20, 80, 50);
     [btn addTarget:self action:@selector(closeColorPlate:) forControlEvents:UIControlEventTouchUpInside];
     [self.containerView addSubview:btn];

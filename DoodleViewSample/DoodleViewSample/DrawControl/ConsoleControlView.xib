@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -16,12 +16,10 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="279-Vu-2MS" customClass="DoodleView">
                     <rect key="frame" x="8" y="164" width="584" height="428"/>
-                    <animations/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="1" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="lLL-aR-oTn">
                     <rect key="frame" x="406" y="126" width="188" height="31"/>
-                    <animations/>
                     <constraints>
                         <constraint firstAttribute="width" constant="184" id="FdU-Cy-KYM"/>
                     </constraints>
@@ -31,7 +29,6 @@
                 </slider>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="width:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygc-BM-b1o">
                     <rect key="frame" x="345" y="130" width="55" height="21"/>
-                    <animations/>
                     <constraints>
                         <constraint firstAttribute="width" constant="55" id="9Rr-uY-tda"/>
                     </constraints>
@@ -44,7 +41,6 @@
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JrT-U0-Acp">
                             <rect key="frame" x="0.0" y="0.0" width="113" height="110"/>
-                            <animations/>
                             <state key="normal" title="自由"/>
                             <connections>
                                 <action selector="pickDrawType:" destination="iN0-l3-epB" eventType="touchUpInside" id="tRr-Rc-zDv"/>
@@ -52,7 +48,6 @@
                         </button>
                         <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yuj-K0-iVN">
                             <rect key="frame" x="118" y="0.0" width="113" height="110"/>
-                            <animations/>
                             <state key="normal" title="圆"/>
                             <connections>
                                 <action selector="pickDrawType:" destination="iN0-l3-epB" eventType="touchUpInside" id="9iO-vH-kc4"/>
@@ -60,7 +55,6 @@
                         </button>
                         <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gzt-ay-shL">
                             <rect key="frame" x="236" y="0.0" width="113" height="110"/>
-                            <animations/>
                             <state key="normal" title="矩形"/>
                             <connections>
                                 <action selector="pickDrawType:" destination="iN0-l3-epB" eventType="touchUpInside" id="G2J-4o-hm1"/>
@@ -68,7 +62,6 @@
                         </button>
                         <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TA9-js-sF7">
                             <rect key="frame" x="354" y="0.0" width="113" height="110"/>
-                            <animations/>
                             <state key="normal" title="圆角矩形"/>
                             <connections>
                                 <action selector="pickDrawType:" destination="iN0-l3-epB" eventType="touchUpInside" id="hhs-CZ-qOP"/>
@@ -76,18 +69,15 @@
                         </button>
                         <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSJ-64-2At">
                             <rect key="frame" x="471" y="0.0" width="113" height="110"/>
-                            <animations/>
                             <state key="normal" title="线"/>
                             <connections>
                                 <action selector="pickDrawType:" destination="iN0-l3-epB" eventType="touchUpInside" id="T69-zQ-awC"/>
                             </connections>
                         </button>
                     </subviews>
-                    <animations/>
                 </stackView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxi-sm-7EK">
                     <rect key="frame" x="8" y="126" width="329" height="30"/>
-                    <animations/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="选择颜色"/>
                     <connections>
@@ -95,7 +85,6 @@
                     </connections>
                 </button>
             </subviews>
-            <animations/>
             <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="ygc-BM-b1o" firstAttribute="baseline" secondItem="dxi-sm-7EK" secondAttribute="firstBaseline" id="1Wn-T4-ZC2"/>
